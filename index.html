@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Turismo em Araras</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Turismo Araras</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explorar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Conheça a nossa cidade</h5>
+                <p>ARARAS</p>
+            </div>
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1568572933382-74d440642117?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+                    class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+                    class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1501876725168-00c445821c9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
+                    class="d-block w-100" alt="Imagem 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+
+    <div class="container text-center my-5 section" id="intro">
+        <h2>Acompanhe-nos em uma jornada fascinante pelos pontos turísticos mais icônicos da região. Explore a rica história e arquitetura da cidade.</h2>
+        <p>Aqui você encontra os melhores guias para desfrutar a cultura de Araras.</p>
+    </div>
+    
+
+    <div class="container section" id="cards">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card hover-card">
+                    <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        class="card-img-top" alt="Pontos">
+                    <div class="card-body">
+                        <h5 class="card-title">Pontos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card hover-card">
+                    <img src="https://images.unsplash.com/photo-1549122728-f519709caa9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        class="card-img-top" alt="Rotas">
+                    <div class="card-body">
+                        <h5 class="card-title">Rotas</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card hover-card">
+                    <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                        class="card-img-top" alt="Eventos">
+                    <div class="card-body">
+                        <h5 class="card-title">Eventos</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4 section" id="events">
+        <h2 class="text-center my-3">Eventos</h2>
+        <div class="row">
+            <!-- Cartão de Evento 1 -->
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Evento 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 1</h5>
+                        <p class="card-text"><strong>Data:</strong> 10/12/2024</p>
+                        <p class="card-text"><strong>Local:</strong> Centro de Convenções</p>
+                        <p class="card-text description">Este é um evento importante para conhecer mais sobre a cultura
+                            local...</p>
+                        <button onclick="toggleDescription(this)" class="btn btn-primary">Ler mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Cartão de Evento 2 -->
+            <div class="col-md-4">
+                <div class="container my-4 section" id="recommended">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Evento 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 2</h5>
+                        <p class="card-text"><strong>Data:</strong> 15/12/2024</p>
+                        <p class="card-text"><strong>Local:</strong> Auditório Municipal</p>
+                        <p class="card-text description">Descubra as maravilhas artísticas da região neste evento
+                            exclusivo...</p>
+                        <button onclick="toggleDescription(this)" class="btn btn-primary">Ler mais</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Cartão de Evento 3 -->
+            <div class="col-md-4">
+                <div class="card event-card">
+                    <img src="https://via.placeholder.com/400x200" class="card-img-top" alt="Evento 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Evento 3</h5>
+                        <p class="card-text"><strong>Data:</strong> 20/12/2024</p>
+                        <p class="card-text"><strong>Local:</strong> Parque da Cidade</p>
+                        <p class="card-text description">Participe de uma celebração ao ar livre com música, arte e
+                            comida local...</p>
+                        <button onclick="toggleDescription(this)" class="btn btn-primary">Ler mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 class="text-center my-3">Recomendados</h2>
+        <div class="row recommended-cards">
+            <div class="col-md-4">
+                <a href="URL-DESTINO" class="card-link">
+                    <div class="card bg-dark text-white recommended-card">
+                        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG11c2V1bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" class="card-img" alt="Igreja Basilisco">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <h5 class="card-title">Igreja Basilisco</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="URL-DESTINO" class="card-link">
+                    <div class="card bg-dark text-white recommended-card">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2h1cmNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                            class="card-img" alt="Museu do Amanhã">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <h5 class="card-title">Museu do Amanhã</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="URL-DESTINO" class="card-link">
+                    <div class="card bg-dark text-white recommended-card">
+                        <img src="https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+                            class="card-img" alt="Parque das Aves">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <h5 class="card-title">Parque das Aves</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>CONTATO</h3>
+                    <p><i class="fas fa-phone"></i> 3544-9400</p>
+                    <p><i class="fas fa-map-marker-alt"></i> R. Barão de Arary, 540 Araras | SP | 13600-170</p>
+                    <p><i class="fas fa-envelope"></i> desenvolvimento.turismo@araras.sp.gov.br</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>BAIXE NOSSO APLICATIVO</h3>
+                    <p>Araras Turismo</p>
+                    <img src="path/to/your-qrcode.png" alt="QR Code">
+                    <a href="https://play.google.com" class="btn btn-primary">Google Play</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="path/to/prefeitura-logo.png" alt="Prefeitura de Araras" class="footer-logo">
+                    <img src="path/to/comtur-logo.png" alt="COMTUR" class="footer-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="lermais.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
