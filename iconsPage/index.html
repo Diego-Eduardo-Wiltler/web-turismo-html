@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Dinâmica</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        img {
+            width: 100%;
+            height: 200px; /* Ajuste a altura conforme necessário */
+            object-fit: cover;
+        }
+        .align-top {
+        
+            align-items: flex-start;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .section-content {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .gps-icon {
+            color: #007BFF;
+            margin-right: 5px;
+        }
+        #map iframe {
+            width: 68%; /* Largura total da coluna */
+            height: 140px; /* Altura ajustada para 150px */
+            border: 0; /* Remove a borda do iframe */
+        }
+        .search-bar {
+            margin-top: 10px;
+            margin-bottom: 20px; /* Espaço abaixo da barra de busca */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Turismo Araras</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rotas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explorar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class=" py-1">
+            <div class="container" style="max-width: 100px;">
+                <div class="d-flex justify-content-center align-items-center">
+                <a href="#" class="mx-3 icon-link"><i class="fa fa-paint-brush"></i></a> <!-- Arte -->
+                <a href="#" class="mx-3 icon-link"><i class="fa fa-music"></i></a> <!-- Música -->
+                <a href="#" class="mx-3 icon-link"><i class="fa fa-book"></i></a> <!-- Literatura -->
+                <a href="#" class="mx-3 icon-link"><i class="fa fa-film"></i></a> <!-- Cinema -->
+                <a href="#" class="mx-3 icon-link"><i class="fa fa-users"></i></a> <!-- Teatro (Substituído) -->
+                <a href="#" class="mx-3 icon-link"><i class="fa fa-university"></i></a> <!-- História/Patrimônio (Substituído) -->
+                <a href="#" class="mx-3 icon-link"><i class="fa fa-camera"></i></a> <!-- Fotografia -->
+                <a href="#" class="mx-3 icon-link"><i class="fa fa-globe"></i></a> <!-- Culturas do Mundo -->
+                <a href="#" class="mx-3 icon-link"><i class="fa fa-image"></i></a> <!-- Iconografia (Substituído) -->
+                <a href="#" class="mx-3 icon-link"><i class="fa fa-star"></i></a> <!-- Destaques -->
+            </div>
+        </div>
+    </div>
+
+        <div class="search-bar">
+            <input type="text" class="form-control" placeholder="Buscar...">
+        </div>
+        <div class="row align-top">
+            <!-- Primeira imagem e texto lateral -->
+            <div class="col-md-6">
+                <img src="https://source.unsplash.com/random/700x400" alt="Imagem Aleatória" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3 class="section-title">Título da Imagem</h3>
+                <p class="section-content">Descrição curta da imagem...</p>
+                <p class="section-content"><strong>Horários:</strong> 9:00 - 18:00</p>
+                <p class="section-content"><i class="fa fa-map-marker gps-icon"></i><strong>Como Chegar:</strong> Rua Exemplo, 123, Cidade - Estado</p>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4487583451583!2d-46.6564354853827!3d-23.561399584679297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cc2c6bd903%3A0xe89ed7cf2b674768!2sAvenida%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1595405793984" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <!-- Segunda imagem e texto lateral -->
+            <div class="col-md-6">
+                <img src="https://source.unsplash.com/random/700x400?city" alt="Imagem Urbana" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <h3 class="section-title">Título da Imagem</h3>
+                <p class="section-content">Descrição curta da imagem...</p>
+                <p class="section-content"><strong>Horários:</strong> 9:00 - 18:00</p>
+                <p class="section-content"><i class="fa fa-map-marker gps-icon"></i><strong>Como Chegar:</strong> Rua Exemplo, 123, Cidade - Estado</p>
+                <div id="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.4487583451583!2d-46.6564354853827!3d-23.561399584679297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59cc2c6bd903%3A0xe89ed7cf2b674768!2sAvenida%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1595405793984" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+            <!-- Terceira imagem e texto lateral -->
+        </div>
+    </div>
+    <div class="container my-4">
+        <h2 class="text-center my-3">Recomendados</h2>
+        <div class="row recommended-cards">
+            <div class="col-md-4">
+                <a href="URL-DESTINO" class="card-link">
+                    <div class="card bg-dark text-white recommended-card">
+                        <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fG11c2V1bXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60" class="card-img" alt="Igreja Basilisco">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <h5 class="card-title">Igreja Basilisco</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="URL-DESTINO" class="card-link">
+                    <div class="card bg-dark text-white recommended-card">
+                        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2h1cmNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=400&q=60"
+                            class="card-img" alt="Museu do Amanhã">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <h5 class="card-title">Museu do Amanhã</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="URL-DESTINO" class="card-link">
+                    <div class="card bg-dark text-white recommended-card">
+                        <img src="https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGFya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60"
+                            class="card-img" alt="Parque das Aves">
+                        <div class="card-img-overlay d-flex align-items-end">
+                            <h5 class="card-title">Parque das Aves</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>CONTATO</h3>
+                    <p><i class="fas fa-phone"></i> 3544-9400</p>
+                    <p><i class="fas fa-map-marker-alt"></i> R. Barão de Arary, 540 Araras | SP | 13600-170</p>
+                    <p><i class="fas fa-envelope"></i> desenvolvimento.turismo@araras.sp.gov.br</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>BAIXE NOSSO APLICATIVO</h3>
+                    <p>Araras Turismo</p>
+                    <img src="path/to/your-qrcode.png" alt="QR Code">
+                    <a href="https://play.google.com" class="btn btn-primary">Google Play</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="path/to/prefeitura-logo.png" alt="Prefeitura de Araras" class="footer-logo">
+                    <img src="path/to/comtur-logo.png" alt="COMTUR" class="footer-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
